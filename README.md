@@ -5,14 +5,13 @@
 # 第一章的内容
 ## 本部分教程
 ![第1章 信息融合的概念](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch1%20%E5%BA%8F%E8%A8%80.pdf)
-![第1章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
+![第1章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.3-%E4%BC%A0%E6%84%9F%E5%99%A8%E6%B5%8B%E9%87%8F%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E7%82%B9.pdf)
 ## 本部分导读
 1. 信息融合的基本特点是什么？
 2. 信息融合的方式有哪两类？请画图说明信息的流动关系？
 3. 利用信息融合的思路，说明中医诊断的过程，并画出结构框图继续说明。
 4. 你能举出利用多源信息融合的基本框架的感知系统吗？说明其原理，并给出初步的解决方案。
 5. 信息融合系统中的多源信息是如何得到的？
-6. 传感器测量的不确定性有哪几种？如何克服它们？
 
 开始啦！！ 
 ## 什么是信息融合
@@ -37,7 +36,12 @@
 
 我们一起搭建一个基于MATLAB的仿真系统，界面就像这样的：
 ![RFID仿真系统界面](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/RFIDTrackingSystem.png)
-
+# 第二章的内容
+## 本部分教程
+![第2章 数据源](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch2%20%E6%95%B0%E6%8D%AE%E6%BA%90.pdf)
+![第2章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
+## 本部分导读
+1. 传感器测量的不确定性有哪几种？如何克服它们？
 ##  数据源的误差
 接下来我们来谈一下传感器获得的数据源的问题。我们知道我们必须要通过一定的方式来采集多源信息融合。我们这门课程所研究的信息主要是来自于传感器，因此这一节我们先首先来讨论一下关于传感器的测量问题。
 
@@ -69,11 +73,10 @@
 4. 开发基于安卓/ios系统的手机APP
 #### 提示：获取数据方法
 1. 在手机上下载matlab的APP
-2. 在电脑matlab上需要安装MATLAB Support Package for Apple iOS Sensors或MATLAB Support Package for Android Sensors，参见如下网页
- ![ios系统](http://cn.mathworks.com/help/supportpkg/iossensor/index.html)
- ![测量值](http://cn.mathworks.com/help/supportpkg/mobilesensor/index.html)
+2. 在电脑matlab上需要安装MATLAB Support Package for Apple iOS Sensors或MATLAB Support Package for Android Sensors，
 3. 按照提示获取手机数据并分析，参见如下网页
-![测量值](http://cn.mathworks.com/help/supportpkg/iossensor/examples/acquire-and-plot-angular-velocity-and-orientation-data-from-your-apple-ios-device.html
+![安卓系统的参考网页](https://ww2.mathworks.cn/help/matlabmobile_android/index.html)
+![苹果系统的参考网页](https://ww2.mathworks.cn/help/matlabmobile/index.html)
 
 
 ### 练习
