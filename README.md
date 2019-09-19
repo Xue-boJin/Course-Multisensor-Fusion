@@ -4,7 +4,8 @@
 
 # 第一章的内容
 ## 本部分教程
-![第1章 信息融合的概念](https://https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch1%20%E5%BA%8F%E8%A8%80.pdf)
+![第1章 信息融合的概念](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch1%20%E5%BA%8F%E8%A8%80.pdf)
+![第1章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
 ## 本部分导读
 1. 信息融合的基本特点是什么？
 2. 信息融合的方式有哪两类？请画图说明信息的流动关系？
@@ -57,6 +58,23 @@
 通常情况下，我们的处理是将常值误差去掉获得更准确的值，这个过程我们一般把它叫做标定。漂移误差也要通过一定的标定的方式，比如说将传感器运行一段时间之后，然后获得这些漂移，再把它们从测量的数值中去掉。
 
 对于测量噪声来讲，因为这是一个统计随机过程的统计量，所以说我们不能够把它去掉，但是我们需要知道这个噪声的统计特性，比如说它是否是高斯白噪声以及它的方差等等，利用这些信息在融合过程当中来考虑这些测量数据的不准确性，以获得更准确的融合结果。
+
+### 作业：使用手机采集并分析运动数据
+#### 目的
+观察手机传感器的测量特性
+#### 内容
+1. 采集手机的IMU、GPS数据，观察手机在运动及静止时的数据的不同
+2. 设计计步算法，分析方法的准确及可靠性
+3. 撰写论文，说明所设计系统的方法、优势等
+4. 开发基于安卓/ios系统的手机APP
+#### 提示：获取数据方法
+1. 在手机上下载matlab的APP
+2. 在电脑matlab上需要安装MATLAB Support Package for Apple iOS Sensors或MATLAB Support Package for Android Sensors，参见如下网页
+ ![ios系统](http://cn.mathworks.com/help/supportpkg/iossensor/index.html)
+ ![测量值](http://cn.mathworks.com/help/supportpkg/mobilesensor/index.html)
+3. 按照提示获取手机数据并分析，参见如下网页
+![测量值](http://cn.mathworks.com/help/supportpkg/iossensor/examples/acquire-and-plot-angular-velocity-and-orientation-data-from-your-apple-ios-device.html
+
 
 ### 练习
 利用MATLAB实现以下问题。
