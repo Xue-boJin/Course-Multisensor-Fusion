@@ -39,7 +39,8 @@
 # 第二章的内容
 ## 本部分教程
 ![第2章 数据源](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch2%20%E6%95%B0%E6%8D%AE%E6%BA%90.pdf)
-![第2章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
+![第2章 传感器数据的特点PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
+![第2章 数据预处理技术PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/2.1-%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%E6%8A%80%E6%9C%AF.pdf)
 ## 本部分导读
 1. 传感器测量的不确定性有哪几种？如何克服它们？
 ##  数据源的误差
@@ -63,7 +64,7 @@
 
 对于测量噪声来讲，因为这是一个统计随机过程的统计量，所以说我们不能够把它去掉，但是我们需要知道这个噪声的统计特性，比如说它是否是高斯白噪声以及它的方差等等，利用这些信息在融合过程当中来考虑这些测量数据的不准确性，以获得更准确的融合结果。
 
-### 作业：使用手机采集并分析运动数据
+### 作业一：使用手机采集并分析运动数据
 #### 目的
 观察手机传感器的测量特性
 #### 内容
@@ -79,13 +80,14 @@
 ![苹果系统的参考网页](https://ww2.mathworks.cn/help/matlabmobile/index.html)
 
 
-### 练习
+### 练习1
 利用MATLAB实现以下问题。
 ![课堂练习——获得模拟的测量数据](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/ClassWork1forKalmanFilter.png)
 
-# 第二次课的主要内容
+# 第三章的主要内容
 ## 本部分教程
-![第2章 Kalman滤波器](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/%E7%AC%AC2%E7%AB%A0%20Kalman%E6%BB%A4%E6%B3%A2%E5%99%A8.pdf)
+![第3章 状态估计基础](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
+![第3章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
 ## 本部分导读
 1. Kalman滤波器适用于线性系统还是非线性系统？
 2. 系统模型包括哪两个？过程模型描述了哪些量的关系？测量模型描述了哪些量的关系？
