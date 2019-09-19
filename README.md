@@ -86,8 +86,15 @@
 
 # 第三章的主要内容
 ## 本部分教程
-![第3章 状态估计基础](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
-![第3章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
+![第三章 数据互联](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
+![第4章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
+## 本部分导读
+
+
+# 第四章的主要内容
+## 本部分教程
+![第4章 状态估计基础](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
+![第4章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
 ## 本部分导读
 1. Kalman滤波器适用于线性系统还是非线性系统？
 2. 系统模型包括哪两个？过程模型描述了哪些量的关系？测量模型描述了哪些量的关系？
@@ -140,7 +147,7 @@ Kalman滤波器5个公式的关系
 如果你已经完成了问题1，那么就从第2个问题开始吧。
 
 
-# 第三次课
+# 第五章的主要内容
 ## 本部分教程
 ![第3章 多传感器融合估计方法](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/%E7%AC%AC3%E7%AB%A0%20%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E4%BC%B0%E8%AE%A1%E6%96%B9%E6%B3%95.pdf)
 ## 本部分导读
