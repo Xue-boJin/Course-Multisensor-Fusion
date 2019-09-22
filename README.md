@@ -93,7 +93,8 @@
 ![第3章 状态估计基础](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
 ## 本部分PPT
 ![第3章 最小二乘PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/3.1-%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E4%BC%B0%E8%AE%A1%E8%A7%A3%E8%AF%BB.pdf)
-![第3章 最小二乘深入解读PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/3.2-%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90.pdf）
+
+![第3章 最小二乘深入解读PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/3.2-%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90.pdf)
 ![第3章 Kalman滤波器PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/3.2-kalman%E6%BB%A4%E6%B3%A2%E5%99%A8.pdf)
 ![第3章 Kalman滤波器深入研究PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/4.1-Kalman%E6%BB%A4%E6%B3%A2%E5%99%A8%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6.pdf)
 ## 本部分导读
