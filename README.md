@@ -5,6 +5,7 @@
 # 第一章的内容
 ## 本部分教程
 ![第1章 信息融合的概念](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch1%20%E5%BA%8F%E8%A8%80.pdf)
+## 本部分PPT
 ![第1章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.3-%E4%BC%A0%E6%84%9F%E5%99%A8%E6%B5%8B%E9%87%8F%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E7%82%B9.pdf)
 ## 本部分导读
 1. 信息融合的基本特点是什么？
@@ -39,6 +40,7 @@
 # 第二章的内容
 ## 本部分教程
 ![第2章 数据源](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch2%20%E6%95%B0%E6%8D%AE%E6%BA%90.pdf)
+## 本部分PPT
 ![第2章 传感器数据的特点PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.3-%E4%BC%A0%E6%84%9F%E5%99%A8%E6%B5%8B%E9%87%8F%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E7%82%B9.pdf)
 ![第2章 数据预处理技术PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/2.1-%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%E6%8A%80%E6%9C%AF.pdf)
 ## 本部分导读
@@ -89,6 +91,7 @@
 # 第一部分：估计方法基础
 ## 本部分教程
 ![第3章 状态估计基础](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
+## 本部分PPT
 ![第3章 最小二乘PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/3.1-%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E4%BC%B0%E8%AE%A1%E8%A7%A3%E8%AF%BB.pdf)
 ![第3章 Kalman滤波器PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/3.2-kalman%E6%BB%A4%E6%B3%A2%E5%99%A8.pdf)
 ![第3章 Kalman滤波器深入研究PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/4.1-Kalman%E6%BB%A4%E6%B3%A2%E5%99%A8%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6.pdf)
@@ -255,6 +258,7 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 # 第四章的主要内容
 ## 本部分教程
 ![第四章 数据互联](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch4%20%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94.pdf)
+## 本部分PPT
 ![第4章 数据互联PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/2.2-%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94.pdf)
 ## 本部分导读
 1. 数据互联要解决的根本问题是什么？
@@ -271,6 +275,7 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 # 第五章的主要内容
 ## 本部分教程
 ![第5章 多传感器融合估计方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch5%20%E7%8A%B6%E6%80%81%E8%9E%8D%E5%90%88%E4%BC%B0%E8%AE%A1.pdf)
+## 本部分PPT
 ![第5章 融合估计方法PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/5.1-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf）
 ## 本部分导读
 1. 多传感器系统的模型与单传感器有何区别？
@@ -352,6 +357,7 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 # 第六章的主要内容
 ## 本部分教程
 ![第6章 证据组合方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch6%20%E8%AF%81%E6%8D%AE%E7%BB%84%E5%90%88%E6%8E%A8%E7%90%86.pdf)
+## 本部分PPT
 ![第6章 证据组合方法之一：贝叶斯估计](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.1-%E8%B4%9D%E5%8F%B6%E6%96%AF%EF%BC%8D%E8%BA%AB%E4%BB%BD%E8%AF%86%E5%88%AB.pdf）
 ![第6章 证据组合方法之二：DS证据理论](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.2%20%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA.pdf）
 ## 本部分导读
