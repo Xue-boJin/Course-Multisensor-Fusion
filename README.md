@@ -103,7 +103,21 @@
 8. 某系统的过程模型为<a href="http://www.codecogs.com/eqnedit.php?latex=x(k&plus;1)=0.3x(k)&plus;w(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x(k&plus;1)=0.3x(k)&plus;w(k)" title="x(k+1)=0.3x(k)+w(k)" /></a>，测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y(k)=3x(k)&plus;v(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y(k)=3x(k)&plus;v(k)" title="y(k)=3x(k)+v(k)" /></a>，其中过程噪声和测量噪声分别为方差为0.3、0.4的高斯白噪声，请设计Kalman滤波器，得到估计<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{x}(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{x}(k)" title="\hat{x}(k)" /></a>。
 9. 试对第8题的系统设计稳态Kalman滤波器，求稳态增益。
 ## 最小二乘估计方法
+看一下教程，先弄懂一下问题：
 
+最小二乘法和平均有什么区别？
+
+如果温度的变化满足一次曲线 ，状态方程的形式 是啥样子的？为啥要写成矩阵形式的状态方程？
+
+PPT第4页上，（3.2a） 是如何包含所有测量值的？
+
+推导一下最小二乘性能函数求极值的过程，获得估计参数 的计算方法。 
+
+加权最小二乘方法和基本的最小二乘方法有何区别，如何取权值？
+
+递推最小二乘方法和基本的最小二乘方法有何区别？看懂它的推导过程。
+
+有了递推最小二乘方法的铺垫，我们就可以学习Kalman滤波器啦！
 ## Kalman 滤波器
 本节讲Kaman滤波器的原理及应用，它是基于多传感器跟踪方法的基础。
 
@@ -243,6 +257,15 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 ![第四章 数据互联](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch4%20%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94.pdf)
 ![第4章 数据互联PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/2.2-%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94.pdf)
 ## 本部分导读
+1. 数据互联要解决的根本问题是什么？
+2. 为什么数据互联很重要？
+3. 数据互联的难点在哪里？
+
+这是数据互联的几种方法哦！我们只要知道它们的区别就可以，随着系统愈来愈复杂，这些方法也会被其他更好性能的方法所替代的。
+
+，我的梦想是如果传感器的性能变好的
+
+这是数据互联的几种方法哦！我们只要知道它们的区别就可以，随着系统愈来愈复杂，这些方法也会被其他更好性能的方法所替代的。但是如果传感器的性能变好
 
 # 第五章的主要内容
 ## 本部分教程
