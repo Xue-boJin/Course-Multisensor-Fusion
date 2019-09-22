@@ -39,7 +39,7 @@
 # 第二章的内容
 ## 本部分教程
 ![第2章 数据源](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch2%20%E6%95%B0%E6%8D%AE%E6%BA%90.pdf)
-![第2章 传感器数据的特点PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
+![第2章 传感器数据的特点PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.3-%E4%BC%A0%E6%84%9F%E5%99%A8%E6%B5%8B%E9%87%8F%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E7%82%B9.pdf)
 ![第2章 数据预处理技术PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/2.1-%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%E6%8A%80%E6%9C%AF.pdf)
 ## 本部分导读
 1. 传感器测量的不确定性有哪几种？如何克服它们？
@@ -84,17 +84,14 @@
 利用MATLAB实现以下问题。
 ![课堂练习——获得模拟的测量数据](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/ClassWork1forKalmanFilter.png)
 
+
 # 第三章的主要内容
+# 第一部分：估计方法基础
 ## 本部分教程
-![第三章 数据互联](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
-![第4章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
-## 本部分导读
-
-
-# 第四章的主要内容
-## 本部分教程
-![第4章 状态估计基础](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
-![第4章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
+![第3章 状态估计基础](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
+![第3章 最小二乘PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/3.1-%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E4%BC%B0%E8%AE%A1%E8%A7%A3%E8%AF%BB.pdf)
+![第3章 Kalman滤波器PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/3.2-kalman%E6%BB%A4%E6%B3%A2%E5%99%A8.pdf)
+![第3章 Kalman滤波器深入研究PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/4.1-Kalman%E6%BB%A4%E6%B3%A2%E5%99%A8%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6.pdf)
 ## 本部分导读
 1. Kalman滤波器适用于线性系统还是非线性系统？
 2. 系统模型包括哪两个？过程模型描述了哪些量的关系？测量模型描述了哪些量的关系？
@@ -105,6 +102,7 @@
 7. 设为待估计变量为两个不变量<a href="http://www.codecogs.com/eqnedit.php?latex=\theta1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta1" title="\theta1" /></a>和<a href="http://www.codecogs.com/eqnedit.php?latex=\theta2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta2" title="\theta2" /></a>，已知传感器1的测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y1=\theta1&plus;v1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y1=\theta1&plus;v1" title="y1=\theta1+v1" /></a>，测量噪声<a href="http://www.codecogs.com/eqnedit.php?latex=v1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?v1" title="v1" /></a>的方差为0.3的高斯白噪声，传感器2的测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y2=\theta1&plus;\theta2&plus;v2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2=\theta1&plus;\theta2&plus;v2" title="y2=\theta1+\theta2+v2" /></a>，测量噪声<a href="http://www.codecogs.com/eqnedit.php?latex=v2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?v2" title="v2" /></a>的方差为0.4的高斯白噪声，请问能否设计Kalman滤波器，仅利用1个传感器的信息（即仅利用传感器1或2的信息）得到估计<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{\theta}1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{\theta}1" title="\hat{\theta}1" /></a>和<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{{\theta}}2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{{\theta}}2" title="\hat{{\theta}}2" /></a>？
 8. 某系统的过程模型为<a href="http://www.codecogs.com/eqnedit.php?latex=x(k&plus;1)=0.3x(k)&plus;w(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x(k&plus;1)=0.3x(k)&plus;w(k)" title="x(k+1)=0.3x(k)+w(k)" /></a>，测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y(k)=3x(k)&plus;v(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y(k)=3x(k)&plus;v(k)" title="y(k)=3x(k)+v(k)" /></a>，其中过程噪声和测量噪声分别为方差为0.3、0.4的高斯白噪声，请设计Kalman滤波器，得到估计<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{x}(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{x}(k)" title="\hat{x}(k)" /></a>。
 9. 试对第8题的系统设计稳态Kalman滤波器，求稳态增益。
+## 最小二乘估计方法
 
 ## Kalman 滤波器
 本节讲Kaman滤波器的原理及应用，它是基于多传感器跟踪方法的基础。
@@ -146,10 +144,110 @@ Kalman滤波器5个公式的关系
 ![kalman滤波器](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/CouseWork2forKalman.png)
 如果你已经完成了问题1，那么就从第2个问题开始吧。
 
+# 第二部分：估计方法应用——跟踪
+## 本部分教程：过程模型
+![第3章 系统模型初探PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/6.1-%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%8F%8A%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95%E5%88%9D%E6%8E%A2.pdf)
+![第3章 过程模型PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/6.2-%E6%9C%BA%E5%8A%A8%E7%9B%AE%E6%A0%87%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B.pdf)
+## 本部分导读
+1. 每一个模型都适用于具有什么特征的运动？要求能够根据不同的运动特性进行合理选择。
+2. 每一个模型都需要设置哪些初始量？
+
+![跟踪是什么意思](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/tracking.jpg)
+
+利用Kalman滤波器获得准确估计需要准确的系统模型，例如，当系统做匀速运动或匀加速运动时，应该采用匀速（CV）模型和匀加速（CA）模型。但在实际应用中经常出现系统加速度非常数的情况，例如，飞机雷达对地面目标或海上目标进行跟踪时，在目标运动过程中驾驶员的人为动作或者控制指令随时会使目标出现转弯、闪避等动作，因此，目标不可能一直作匀速或者匀加速运动，这种很“随意”的运动称为“机动”。为了保证较好的轨迹跟踪结果，研究机动目标的运动模型是十分必要的。
+
+![不同的模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/DifferentModels.png)
+我们要讲述的过程模型包括五种模型。想跟随我的思路，看一下这些模型的特点，点点下面这些蓝色字体，看看链接的程序吧，你会发现一点都不难。
+## CV模型
+当目标做匀速运动的时候，![CV模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/CVmodel.m)是最合适的。它满足牛顿定律的速度，位移之间的关系，并且认为加速度为零。当然真正的零很少见，因此，CV模型认为，加速度是零均值的白噪声，而且方差是已知的。
+
+## CA模型
+![CA模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/CAmodel.m)认为，加速度的导数为零。也就是，加速度为一个恒定值，不变化。当然，要求加速度不变化的条件太苛刻，所以，CA模型认为，加速度的导数为零均值白噪声的随机过程。
+
+试一下这个![程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/C7_1.m)，看看这两个模型有什么不同的效果吧!
+### Singer模型
+![Singer模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/Singermodel.m)做了更多的假设，假设加速度是一个有色噪声。
+### 当前统计模型
+![当前统计模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/Starmodel.m)假设就更多了，假设加速度的噪声满足某一个分布，而且还具有反馈的结构了。
+试一下这个![程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/C7_7.m)，看一下利用这个模型跟踪GPS仿真轨迹的效果吧！
+### 自适应模型
+![自适应模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/myStarmodel.m)这个更绝，认为加速度满足一个未知的随机分布，可以根据估计状态进行统计得到它的规律。因此它的实用性更强，但是也最复杂。
+再试一下这个![程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/C7_9.m)，别忘了下载它的![子函数](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/StartrackingModel.m)哦！
+
+
+### GPS跟踪系统的机动目标轨迹模拟 
+这里介绍一个模拟轨迹的程序，很好玩的，你可以随心所欲的模拟小汽车的行驶轨迹！！
+
+首先介绍一下GPS系统的数据采集特征，即传感器测量特征。GPS系统可以测量二维空间，并且该测量与横、纵坐标不相关。一般情况下，横、纵坐标都含有噪声，方差已知，因此模拟的测量数据需要包含横纵坐标，是2维数据。 
+
+这段程序使用了函数axis，这个函数可以设置坐标轴，即横、纵坐标的起点和终点，
+
+    axis([0 100 0 100])
+表示横、纵坐标的起点和终点都是从0到100，前两个数值表示横坐标的起点和终点，后两个数值表示纵坐标的起点和终点。
+
+    hold on
+函数的功能是保持目前图形窗口的状态，即接下来的图会画在目前的图形窗口上。 
+
+程序中还使用了两个disp函数，功能是给出说明，disp（）里面的任何字符都会显示在窗口上。这里显示的内容是本程序的使用说明：使用鼠标左键点出每一个点，点击右键表示点击该点后结束数据产生步骤。为什么这样提示呢？因为这段程序可以使用坐标在横、纵坐标轴从0~100的区间的任意一点来画点，并记住每一个点的前后顺序，还能把这些点连成一条曲线。
+
+那么怎么实现记录每一个点呢？用
+
+    ginput
+这个函数，用for循环来记录所有用左键点击的点。
+
+ginput函数输入1表示点左键，输出是点击点的横、纵坐标值。每点击一个点，在程序中都会用红色圆圈画出来，不过注意在点击鼠标左键点时不要太快，否则会丢点。接下来把所有点用函数spline连成一条光滑曲线，使用spline函数需要设置插入的点数，程序中在每两个点之间插入10个点，这样能形成一条光滑曲线，来模拟在平面上机动目标走过的曲线。 
+
+最后使用subplot，把横、纵坐标放在一张图上，其中实线是机动目标走过的真实的轨迹，不带测量噪声。红色点模拟的是带有测量噪声的传感器测量输出。 
+
+    %使用说明：使用鼠标左键可以产生轨迹的各个点，鼠标右键为结束点。 
+    axis([0 100 0 100]) 
+    hold on % 程序变量初始化 
+    xy = []; 
+    n = 0; % 使用循环，得到鼠标点击左键是的坐标位置 
+    disp('Left mouse button picks points.') %%在主窗口上提示操作方法 
+    disp('Right mouse button picks last point.') 
+    but = 1; 
+    while but == 1 [xi,yi,but] = ginput(1); %%该函数可以得到鼠标左键的坐标点 
+    plot(xi,yi,'ro') n = n+1; xy(:,n) = [xi;yi]; 
+    end % 利用插值函数获得光滑曲线，模拟目标运动曲线和测量数据。 
+    t = 1:n; ts = 1: 0.1: n; xys = spline(t,xy,ts); plot(xys(1,:),xys(2,:),'b-'); %%用蓝色直线画出目标运动曲线 
+    Rx=10;Ry=10; %%设置横轴、纵轴的测量噪声方差Rx、Ry
+    plot(xys(1,:)+randn(size(xys(1,:)))*sqrt(Rx),xys(2,:)+randn(size(xys(1,:)))*sqrt(Ry),'k.'); %%，在2维坐标下用黑色点画出每一个测量数据 
+    xlabel('x轴');ylabel('y轴') 
+    hold off 
+    
+    %在另一张图上分别画出横、纵轴的目标运动数据和测量数据。 
+    figure subplot(2,1,1),plot(xys(1,:)) hold on 
+    subplot(2,1,1),plot(xys(1,:)+randn(size(xys(1,:)))*sqrt(Rx),'.') 
+    ylabel('横轴模拟数据');
+    subplot(2,1,2),plot(xys(2,:)) hold on 
+    subplot(2,1,2),plot(xys(2,:)+randn(size(xys(1,:)))*sqrt(Rx),'.') 
+    ylabel('纵轴模拟数据') hold off 
+    %存储数据 
+    save mytarget1 xys ts 
+
+![GPS系统的机动目标轨迹模拟](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/GPS1.png)
+
+
+GPS系统的机动目标轨迹的模拟数据
+![GPS系统的机动目标轨迹横、纵坐标轴数据模拟](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/GPS2.png)
+
+
+GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
+
+你可以下载![GPS仿真数据](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/C6_5.m)这个程序，利用你的鼠标“点”出你的运行轨迹吧！
+
+
+# 第四章的主要内容
+## 本部分教程
+![第四章 数据互联](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch4%20%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94.pdf)
+![第4章 数据互联PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/2.2-%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94.pdf)
+## 本部分导读
 
 # 第五章的主要内容
 ## 本部分教程
-![第3章 多传感器融合估计方法](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/%E7%AC%AC3%E7%AB%A0%20%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E4%BC%B0%E8%AE%A1%E6%96%B9%E6%B3%95.pdf)
+![第5章 多传感器融合估计方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch5%20%E7%8A%B6%E6%80%81%E8%9E%8D%E5%90%88%E4%BC%B0%E8%AE%A1.pdf)
+![第5章 融合估计方法PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/5.1-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf）
 ## 本部分导读
 1. 多传感器系统的模型与单传感器有何区别？
 2. 四种融合方法中哪两种性能是一样的？
@@ -166,7 +264,7 @@ Kalman滤波器5个公式的关系
 ![四种融合方法](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/FourFusionMethods.png)
 关于这四种融合方法的简要描述见![文档](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/9-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf)，详细的扩展阅读参见![文档](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/9-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95-%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB.pdf)。
 
-### 作业
+### 作业1
 需要在前两个问题的基础上，完成以下作业的第3题。
 
 假设有一个量满足如下游走模型
@@ -208,7 +306,6 @@ Kalman滤波器5个公式的关系
 
 注：计入大作业成绩，请同学们认真对待。
 
-
 ### 参考答案
 
 用于产生模拟数据的程序见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/mydata.m)， 获得了![数据](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/myfusiondata.mat)。
@@ -222,10 +319,21 @@ Kalman滤波器5个公式的关系
 第四种：分布式最优算法的函数，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/DistributedFusionfunction.m)。
 利用MATLAB程序实现这四种算法并进行比较，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/showall.m)。
 
+
+## 作业2
+1. 模拟出GPS系统模拟数据，并且分别模拟出一个传感器和两个传感器的测量数据；
+2. 基于一个传感器的测量数据，选择至少3种过程模型进行跟踪，比较不同模型对你的数据的适用性；
+3. 基于两个传感器的测量数据，选择对你的数据来说最好的那个模型进行跟踪仿真研究，来说明两个传感器是非常有意义的。
+
 # 第六章的主要内容
 ## 本部分教程
-![第3章 多传感器融合估计方法](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/%E7%AC%AC3%E7%AB%A0%20%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E4%BC%B0%E8%AE%A1%E6%96%B9%E6%B3%95.pdf)
+![第6章 证据组合方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch6%20%E8%AF%81%E6%8D%AE%E7%BB%84%E5%90%88%E6%8E%A8%E7%90%86.pdf)
+![第6章 证据组合方法之一：贝叶斯估计](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.1-%E8%B4%9D%E5%8F%B6%E6%96%AF%EF%BC%8D%E8%BA%AB%E4%BB%BD%E8%AF%86%E5%88%AB.pdf）
+![第6章 证据组合方法之二：DS证据理论](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.2%20%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA.pdf）
 ## 本部分导读
+
+
+
 ## 参考文献
 
 [1] 金学波，![Kalman滤波器理论与应用——基于MATLAB实现](http://www.ecsponline.com/goods.php?id=177510)，科学出版社，2016，第2章、第4章
