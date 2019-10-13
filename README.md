@@ -149,11 +149,11 @@ Kalman滤波器5个公式的关系
 ### 2. 给你Matlab程序，来加深一下印象。
     
     function [xe,pk,p1]=kalmanfun(A,C,Q,R,xe,z,p) 
-    xe=A*xe;                     
-    P1=A*p*A'+Q;               
-    K=p1*C'*inv(C*p1*C'+R);     
-    xe=xe+K*(z-C*xe);            
-    pk=(eye(size(p1))-l*C)*p1;   
+    xe=A*xe; 
+    p1=A*p*A'+Q; 
+    K=p1*C'*inv(C*p1*C'+R); 
+    xe=xe+K*(z-C*xe); 
+    pk=(eye(size(p1))-K*C)*p1;  
 
 ### 3. Kalman滤波器在使用时的一些小技巧。
 #### 稳态Kalman滤波器是啥？有什么用？
@@ -348,7 +348,7 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 
 第二种：测量融合方法II的函数，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/MIIfunction.m)。
 
-第三种：track to track 融合方法的函数，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/TrackToTrackfunction.m)。
+第三种：track to track 融合方法的函数，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/TTfunction.m)。
 
 第四种：分布式最优算法的函数，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/DistributedFusionfunction.m)。
 利用MATLAB程序实现这四种算法并进行比较，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/showall.m)。
