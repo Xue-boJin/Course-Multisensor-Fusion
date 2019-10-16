@@ -292,10 +292,10 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 6. 设为待估计变量为两个不变量<a href="http://www.codecogs.com/eqnedit.php?latex=\theta1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta1" title="\theta1" /></a>和<a href="http://www.codecogs.com/eqnedit.php?latex=\theta2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta2" title="\theta2" /></a>，已知传感器的测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y=\theta1&plus;\theta2&plus;v" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y=\theta1&plus;\theta2&plus;v" title="y=\theta1+\theta2+v" /></a>，测量噪声<a href="http://www.codecogs.com/eqnedit.php?latex=v" target="_blank"><img src="http://latex.codecogs.com/gif.latex?v" title="v" /></a>的方差为0.4的高斯白噪声。假设又增加了一个传感器，其测量方程为<a href="http://www.codecogs.com/eqnedit.php?latex=y2=\theta2&plus;v2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2=\theta2&plus;v2" title="y2=\theta2+v2" /></a>，测量噪声的方差为0.3。请设计Kalman滤波器，得到估计<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{\theta}1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{\theta}1" title="\hat{\theta}1" /></a>和<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{{\theta}}2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{{\theta}}2" title="\hat{{\theta}}2" /></a>。
 7. 某系统的过程模型为<a href="http://www.codecogs.com/eqnedit.php?latex=x(k&plus;1)=0.3x(k)&plus;w(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x(k&plus;1)=0.3x(k)&plus;w(k)" title="x(k+1)=0.3x(k)+w(k)" /></a>，过程噪声的方差为2，测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y(k)=3x(k)&plus;v(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y(k)=3x(k)&plus;v(k)" title="y(k)=3x(k)+v(k)" /></a>，其中测量噪声<a href="http://www.codecogs.com/eqnedit.php?latex=v" target="_blank"><img src="http://latex.codecogs.com/gif.latex?v" title="v" /></a>的方差为0.4的高斯白噪声。假设又增加了一个传感器，其测量方程为<a href="http://www.codecogs.com/eqnedit.php?latex=y2(k)=3x(k)&plus;v2(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2(k)=3x(k)&plus;v2(k)" title="y2(k)=3x(k)+v2(k)" /></a>，测量噪声的方差为0.3。请设计Kalman滤波器，得到估计<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{x}(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{x}(k)" title="\hat{x}(k)" /></a>。
 
-![多传感器系统模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/MultisensorSystem.png)
+![多传感器系统模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MultisensorSystem.png)
 
 我们讲述四种不同的状态融合估计方法。
-![四种融合方法](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/FourFusionMethods.png)
+![四种融合方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/FourFusionMethods.png)
 关于这四种融合方法的简要描述见![文档](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/9-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf)，详细的扩展阅读参见![文档](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/9-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95-%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB.pdf)。
 
 ### 作业1
@@ -342,7 +342,7 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 
 ### 参考答案
 
-用于产生模拟数据的程序见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/mydata.m)， 获得了![数据](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/myfusiondata.mat)。
+用于产生模拟数据的程序见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/mydata.m)， 获得了![数据](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/myfusiondata.mat)。
 
 第一种：测量融合方法I的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MIfunction.m)。
 
