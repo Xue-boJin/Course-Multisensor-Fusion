@@ -30,13 +30,13 @@
 信息融合技术从1973年年初提出来，以后经历了20世纪的80年代、90年代初和90年代末的三次研究热潮。从1973年美国国防部资助开发的声纳信号理解系统首次提出了数据融合的概念。1988年，美国国防部把数据融合列为90年代重点研究开发的20项关键技术之一。又过了三年之后，1991年美国就已经在这方面有了很多的研究成果，已经有54个融合系统引入到了军用电子系统中去。1995年，我国首次数据融合技术会议，有很多研究工作者，包括军方研究所和大学都有了很多这方面的研究。
 
 ## 大信息融合的概念与信息融合技术的关系
-![两者的关系](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/ApplicationofFusion.png)
+![两者的关系](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/ApplicationofFusion.png)
 感觉到这两者不一样了吧！！希望课程能让你既可以应用信息融合的概念处理生活、学习中的事情，让自己更有智慧，又可以学会信息融合技术做一个IT精英！
 ## 本门课程的主要内容
 以数据融合中的位置估计为主要内容，讲授基于RFID的室内跟踪仿真系统。
 
 我们一起搭建一个基于MATLAB的仿真系统，界面就像这样的：
-![RFID仿真系统界面](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/RFIDTrackingSystem.png)
+![RFID仿真系统界面](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/RFIDTrackingSystem.png)
 # 第二章的内容
 ## 本部分教程
 ![第2章 数据源](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch2%20%E6%95%B0%E6%8D%AE%E6%BA%90.pdf)
@@ -54,10 +54,10 @@
 那么这些传感器所获得的数据具有哪些不准确性呢？这些不准确性主要包括常值误差、漂移误差和测量噪声。常值误差指的是在测量的过程中，由于读数、或传感器本身的性能上存在的一个偏差，它会是一个常量，测量值始终是和真实值相差一个常量。 漂移误差是测量结果和真实值之间会产生一定的逐渐加大的偏差，有时是由于传感器的温度逐渐升高造成的。我们会发现这个偏差越来越大。
 
 还有一种就是由于传感器本身的性能，以及周围的一些干扰，导致测量数据会含有噪声。传感器的这三种不同测量误差都需要我们消除或者了解。
-![真实值和各种不确定性](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/MeasurementNoise.png)
+![真实值和各种不确定性](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/MeasurementNoise.png)
 
 真实值和各种不确定性，包括常值误差、漂移误差和测量噪声
-![测量值](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/Measurement.png)
+![测量值](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/Measurement.png)
 
 获得的测量值，它和真实值是多么的不一样呀！所以，有时传感器很不准，有木有？？
 
@@ -85,7 +85,7 @@
 
 ### 练习1
 利用MATLAB实现以下问题。
-![课堂练习——获得模拟的测量数据](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/ClassWork1forKalmanFilter.png)
+![课堂练习——获得模拟的测量数据](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/ClassWork1forKalmanFilter.png)
 
 
 # 第三章的主要内容
@@ -137,12 +137,12 @@ PPT第4页上，（3.2a） 是如何包含所有测量值的？
 
 1. 这五个公式啥关系？
 
-2. 给你![Matlab程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/kalmanfun.m)，来加深一下印象。
+2. 给你![Matlab程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/kalmanfun.m)，来加深一下印象。
 
 3. Kalman滤波器在使用时的一些小技巧。
 
 ### 1. 这五个公式啥关系？
-![Kalman滤波器](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/KalmanFiler.png)
+![Kalman滤波器](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/KalmanFiler.png)
 
 
 Kalman滤波器5个公式的关系
@@ -157,13 +157,13 @@ Kalman滤波器5个公式的关系
 
 ### 3. Kalman滤波器在使用时的一些小技巧。
 #### 稳态Kalman滤波器是啥？有什么用？
-运行一下本文件夹中的![这个程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/C4_1.m)，感受一下Kalman滤波器是怎样快速收敛到稳态的。别忘了还需要下载它所需的![函数](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/steadycov.m)!!
+运行一下本文件夹中的![这个程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/C4_1.m)，感受一下Kalman滤波器是怎样快速收敛到稳态的。别忘了还需要下载它所需的![函数](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/steadycov.m)!!
 
  分析一下程序运行结果，说说估计的方差说明什么？方差越大说明什么？
 
 ### 练习
 利用MATLAB实现以下问题。
-![kalman滤波器](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/CouseWork2forKalman.png)
+![kalman滤波器](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/CouseWork2forKalman.png)
 如果你已经完成了问题1，那么就从第2个问题开始吧。
 
 # 第二部分：估计方法应用——跟踪
@@ -174,27 +174,27 @@ Kalman滤波器5个公式的关系
 1. 每一个模型都适用于具有什么特征的运动？要求能够根据不同的运动特性进行合理选择。
 2. 每一个模型都需要设置哪些初始量？
 
-![跟踪是什么意思](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/tracking.jpg)
+![跟踪是什么意思](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/tracking.jpg)
 
 利用Kalman滤波器获得准确估计需要准确的系统模型，例如，当系统做匀速运动或匀加速运动时，应该采用匀速（CV）模型和匀加速（CA）模型。但在实际应用中经常出现系统加速度非常数的情况，例如，飞机雷达对地面目标或海上目标进行跟踪时，在目标运动过程中驾驶员的人为动作或者控制指令随时会使目标出现转弯、闪避等动作，因此，目标不可能一直作匀速或者匀加速运动，这种很“随意”的运动称为“机动”。为了保证较好的轨迹跟踪结果，研究机动目标的运动模型是十分必要的。
 
-![不同的模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/DifferentModels.png)
+![不同的模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/DifferentModels.png)
 我们要讲述的过程模型包括五种模型。想跟随我的思路，看一下这些模型的特点，点点下面这些蓝色字体，看看链接的程序吧，你会发现一点都不难。
 ## CV模型
-当目标做匀速运动的时候，![CV模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/CVmodel.m)是最合适的。它满足牛顿定律的速度，位移之间的关系，并且认为加速度为零。当然真正的零很少见，因此，CV模型认为，加速度是零均值的白噪声，而且方差是已知的。
+当目标做匀速运动的时候，![CV模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/CVmodel.m)是最合适的。它满足牛顿定律的速度，位移之间的关系，并且认为加速度为零。当然真正的零很少见，因此，CV模型认为，加速度是零均值的白噪声，而且方差是已知的。
 
 ## CA模型
-![CA模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/CAmodel.m)认为，加速度的导数为零。也就是，加速度为一个恒定值，不变化。当然，要求加速度不变化的条件太苛刻，所以，CA模型认为，加速度的导数为零均值白噪声的随机过程。
+![CA模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/CAmodel.m)认为，加速度的导数为零。也就是，加速度为一个恒定值，不变化。当然，要求加速度不变化的条件太苛刻，所以，CA模型认为，加速度的导数为零均值白噪声的随机过程。
 
-试一下这个![程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/C7_1.m)，看看这两个模型有什么不同的效果吧!
+试一下这个![程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/C7_1.m)，看看这两个模型有什么不同的效果吧!
 ### Singer模型
-![Singer模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/Singermodel.m)做了更多的假设，假设加速度是一个有色噪声。
+![Singer模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/Singermodel.m)做了更多的假设，假设加速度是一个有色噪声。
 ### 当前统计模型
-![当前统计模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/Starmodel.m)假设就更多了，假设加速度的噪声满足某一个分布，而且还具有反馈的结构了。
-试一下这个![程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/C7_7.m)，看一下利用这个模型跟踪GPS仿真轨迹的效果吧！
+![当前统计模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/Starmodel.m)假设就更多了，假设加速度的噪声满足某一个分布，而且还具有反馈的结构了。
+试一下这个![程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/C7_7.m)，看一下利用这个模型跟踪GPS仿真轨迹的效果吧！
 ### 自适应模型
-![自适应模型](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/myStarmodel.m)这个更绝，认为加速度满足一个未知的随机分布，可以根据估计状态进行统计得到它的规律。因此它的实用性更强，但是也最复杂。
-再试一下这个![程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/C7_9.m)，别忘了下载它的![子函数](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/StartrackingModel.m)哦！
+![自适应模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/myStarmodel.m)这个更绝，认为加速度满足一个未知的随机分布，可以根据估计状态进行统计得到它的规律。因此它的实用性更强，但是也最复杂。
+再试一下这个![程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/C7_9.m)，别忘了下载它的![子函数](https://github.com/coderGoOn/Course-Multisensor-Fusion/blob/code/StartrackingModel.m)哦！
 
 
 ### GPS跟踪系统的机动目标轨迹模拟 
@@ -248,16 +248,16 @@ ginput函数输入1表示点左键，输出是点击点的横、纵坐标值。�
     %存储数据 
     save mytarget1 xys ts 
 
-![GPS系统的机动目标轨迹模拟](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/GPS1.png)
+![GPS系统的机动目标轨迹模拟](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/GPS1.png)
 
 
 GPS系统的机动目标轨迹的模拟数据
-![GPS系统的机动目标轨迹横、纵坐标轴数据模拟](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/resource/GPS2.png)
+![GPS系统的机动目标轨迹横、纵坐标轴数据模拟](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/GPS2.png)
 
 
 GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 
-你可以下载![GPS仿真数据](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson2/C6_5.m)这个程序，利用你的鼠标“点”出你的运行轨迹吧！
+你可以下载![GPS仿真数据](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/C6_5.m)这个程序，利用你的鼠标“点”出你的运行轨迹吧！
 
 
 # 第四章的主要内容
@@ -342,16 +342,16 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 
 ### 参考答案
 
-用于产生模拟数据的程序见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/mydata.m)， 获得了![数据](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/myfusiondata.mat)。
+用于产生模拟数据的程序见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/mydata.m)， 获得了![数据](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/myfusiondata.mat)。
 
-第一种：测量融合方法I的函数，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/MIfunction.m)。
+第一种：测量融合方法I的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MIfunction.m)。
 
-第二种：测量融合方法II的函数，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/MIIfunction.m)。
+第二种：测量融合方法II的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MIIfunction.m)。
 
-第三种：track to track 融合方法的函数，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/TTfunction.m)。
+第三种：track to track 融合方法的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/TTfunction.m)。
 
-第四种：分布式最优算法的函数，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/DistributedFusionfunction.m)。
-利用MATLAB程序实现这四种算法并进行比较，见![参考程序](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/showall.m)。
+第四种：分布式最优算法的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/DistributedFusionfunction.m)。
+利用MATLAB程序实现这四种算法并进行比较，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/showall.m)。
 
 
 ## 作业2
