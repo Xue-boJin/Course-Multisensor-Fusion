@@ -36,7 +36,7 @@
 以数据融合中的位置估计为主要内容，讲授基于RFID的室内跟踪仿真系统。
 
 我们一起搭建一个基于MATLAB的仿真系统，界面就像这样的：
-![RFID仿真系统界面](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/RFIDTrackingSystem.png)
+![RFID仿真系统界面](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/RFIDTrackingSystem.png)
 # 第二章的内容
 ## 本部分教程
 ![第2章 数据源](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch2%20%E6%95%B0%E6%8D%AE%E6%BA%90.pdf)
@@ -54,14 +54,14 @@
 那么这些传感器所获得的数据具有哪些不准确性呢？这些不准确性主要包括常值误差、漂移误差和测量噪声。常值误差指的是在测量的过程中，由于读数、或传感器本身的性能上存在的一个偏差，它会是一个常量，测量值始终是和真实值相差一个常量。 漂移误差是测量结果和真实值之间会产生一定的逐渐加大的偏差，有时是由于传感器的温度逐渐升高造成的。我们会发现这个偏差越来越大。
 
 还有一种就是由于传感器本身的性能，以及周围的一些干扰，导致测量数据会含有噪声。传感器的这三种不同测量误差都需要我们消除或者了解。
-![真实值和各种不确定性](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/MeasurementNoise.png)
+![真实值和各种不确定性](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/MeasurementNoise.png)
 
 真实值和各种不确定性，包括常值误差、漂移误差和测量噪声
-![测量值](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/Measurement.png)
+![测量值](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/Measurement.png)
 
 获得的测量值，它和真实值是多么的不一样呀！所以，有时传感器很不准，有木有？？
 
-获得上述结果的见程序![含有测量偏差及噪声的测量数据模拟](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/MeasurementNoise.m)
+获得上述结果的见程序![含有测量偏差及噪声的测量数据模拟](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MeasurementNoise.m)
 
 通常情况下，我们的处理是将常值误差去掉获得更准确的值，这个过程我们一般把它叫做标定。漂移误差也要通过一定的标定的方式，比如说将传感器运行一段时间之后，然后获得这些漂移，再把它们从测量的数值中去掉。
 
@@ -85,7 +85,7 @@
 
 ### 练习1
 利用MATLAB实现以下问题。
-![课堂练习——获得模拟的测量数据](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/ClassWork1forKalmanFilter.png)
+![课堂练习——获得模拟的测量数据](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/ClassWork1forKalmanFilter.png)
 
 
 # 第三章的主要内容
@@ -142,7 +142,7 @@ PPT第4页上，（3.2a） 是如何包含所有测量值的？
 3. Kalman滤波器在使用时的一些小技巧。
 
 ### 1. 这五个公式啥关系？
-![Kalman滤波器](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/KalmanFiler.png)
+![Kalman滤波器](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/KalmanFiler.png)
 
 
 Kalman滤波器5个公式的关系
@@ -163,7 +163,7 @@ Kalman滤波器5个公式的关系
 
 ### 练习
 利用MATLAB实现以下问题。
-![kalman滤波器](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/CouseWork2forKalman.png)
+![kalman滤波器](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/CouseWork2forKalman.png)
 如果你已经完成了问题1，那么就从第2个问题开始吧。
 
 # 第二部分：估计方法应用——跟踪
@@ -174,11 +174,11 @@ Kalman滤波器5个公式的关系
 1. 每一个模型都适用于具有什么特征的运动？要求能够根据不同的运动特性进行合理选择。
 2. 每一个模型都需要设置哪些初始量？
 
-![跟踪是什么意思](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/tracking.jpg)
+![跟踪是什么意思](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/tracking.jpg)
 
 利用Kalman滤波器获得准确估计需要准确的系统模型，例如，当系统做匀速运动或匀加速运动时，应该采用匀速（CV）模型和匀加速（CA）模型。但在实际应用中经常出现系统加速度非常数的情况，例如，飞机雷达对地面目标或海上目标进行跟踪时，在目标运动过程中驾驶员的人为动作或者控制指令随时会使目标出现转弯、闪避等动作，因此，目标不可能一直作匀速或者匀加速运动，这种很“随意”的运动称为“机动”。为了保证较好的轨迹跟踪结果，研究机动目标的运动模型是十分必要的。
 
-![不同的模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/DifferentModels.png)
+![不同的模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/DifferentModels.png)
 我们要讲述的过程模型包括五种模型。想跟随我的思路，看一下这些模型的特点，点点下面这些蓝色字体，看看链接的程序吧，你会发现一点都不难。
 ## CV模型
 当目标做匀速运动的时候，![CV模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/CVmodel.m)是最合适的。它满足牛顿定律的速度，位移之间的关系，并且认为加速度为零。当然真正的零很少见，因此，CV模型认为，加速度是零均值的白噪声，而且方差是已知的。
@@ -248,11 +248,11 @@ ginput函数输入1表示点左键，输出是点击点的横、纵坐标值。�
     %存储数据 
     save mytarget1 xys ts 
 
-![GPS系统的机动目标轨迹模拟](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/GPS1.png)
+![GPS系统的机动目标轨迹模拟](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/GPS1.png)
 
 
 GPS系统的机动目标轨迹的模拟数据
-![GPS系统的机动目标轨迹横、纵坐标轴数据模拟](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/GPS2.png)
+![GPS系统的机动目标轨迹横、纵坐标轴数据模拟](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/GPS2.png)
 
 
 GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
