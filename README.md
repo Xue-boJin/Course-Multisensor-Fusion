@@ -131,7 +131,7 @@ PPT第4页上，（3.2a） 是如何包含所有测量值的？
 
 它只有五个公式，但有人觉着它很难，因为这五个公式的关系挺复杂的。
 
-关于Kalman滤波器是怎么来的，为什么在参数已知的条件下是最优的等相关问题，请参见![扩展阅读1](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/5-%E7%AC%AC3%E7%AB%A0%20%E7%BA%BF%E6%80%A7%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E4%BC%B0%E8%AE%A1%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB.pdf)和![扩展阅读2](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/7-%E7%AC%AC4%E7%AB%A0%20Kalman%E6%BB%A4%E6%B3%A2%E5%99%A8%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB.pdf)
+关于Kalman滤波器是怎么来的，为什么在参数已知的条件下是最优的等相关问题，请参见![扩展阅读1](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/4.2-Kalman%E6%BB%A4%E6%B3%A2%E5%99%A8%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB.pdf)
 
 下面我们来讲怎么用，具体来讲，我们准备讲明白以下几点：
 
