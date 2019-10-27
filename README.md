@@ -271,7 +271,7 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 3. 数据互联的难点在哪里？
 
 这是数据互联的几种方法哦！我们只要知道它们的区别就可以，随着系统愈来愈复杂，这些方法也会被其他更好性能的方法所替代的。
-![数据互联的经典方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95.png）
+![数据互联的经典方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95.png)
 
 在这个点上，我的梦想是希望传感器的性能变好，那么根本就不需要数据互联啦！
 
@@ -281,7 +281,7 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 ## 本部分教程
 ![第5章 多传感器融合估计方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch5%20%E7%8A%B6%E6%80%81%E8%9E%8D%E5%90%88%E4%BC%B0%E8%AE%A1.pdf)
 ## 本部分PPT
-![第5章 融合估计方法PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/5.1-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf）
+![第5章 融合估计方法PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/5.1-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf)
 ## 本部分导读
 1. 多传感器系统的模型与单传感器有何区别？
 2. 四种融合方法中哪两种性能是一样的？
@@ -363,9 +363,9 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 ## 本部分教程
 ![第6章 证据组合方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch6%20%E8%AF%81%E6%8D%AE%E7%BB%84%E5%90%88%E6%8E%A8%E7%90%86.pdf)
 ## 本部分PPT
-![第6章 证据组合方法之一：贝叶斯估计](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.1-%E8%B4%9D%E5%8F%B6%E6%96%AF%EF%BC%8D%E8%BA%AB%E4%BB%BD%E8%AF%86%E5%88%AB.pdf）
+![第6章 证据组合方法之一：贝叶斯估计](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.1-%E8%B4%9D%E5%8F%B6%E6%96%AF%EF%BC%8D%E8%BA%AB%E4%BB%BD%E8%AF%86%E5%88%AB.pdf)
+![第6章 证据组合方法之一：DS证据理论](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.2%20%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA.pdf)
 
-![第6章 证据组合方法之二：DS证据理论](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.2%20%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA.pdf）
 ## 本部分导读
 
 
