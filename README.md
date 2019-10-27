@@ -363,9 +363,9 @@ GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 ## 本部分教程
 ![第6章 证据组合方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch6%20%E8%AF%81%E6%8D%AE%E7%BB%84%E5%90%88%E6%8E%A8%E7%90%86.pdf)
 ## 本部分PPT
-![第6章 证据组合方法之一：贝叶斯估计](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.1-%E8%B4%9D%E5%8F%B6%E6%96%AF%EF%BC%8D%E8%BA%AB%E4%BB%BD%E8%AF%86%E5%88%AB.pdf）
+![第6章 证据组合方法之一：贝叶斯估计](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.1-%E8%B4%9D%E5%8F%B6%E6%96%AF%EF%BC%8D%E8%BA%AB%E4%BB%BD%E8%AF%86%E5%88%AB.pdf)
+![第6章 证据组合方法之一：DS证据理论](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.2%20%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA.pdf)
 
-![第6章 证据组合方法之二：DS证据理论](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/7.2%20%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA.pdf）
 ## 本部分导读
 
 
