@@ -112,7 +112,7 @@
 
 
 # 第三章的主要内容
-# 第一部分：估计方法基础
+# 估计方法基础
 ## 本部分教程
 ![第3章 状态估计基础](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
 ## 本部分PPT
@@ -189,6 +189,46 @@ Kalman滤波器5个公式的关系
 ![kalman滤波器](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/CouseWork2forKalman.png)
 如果你已经完成了问题1，那么就从第2个问题开始吧。
 
+
+
+# 第四章的主要内容
+## 本部分教程
+![第四章 数据互联](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch4%20%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94.pdf)
+## 本部分PPT
+![第4章 数据互联PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/2.2-%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94.pdf)
+## 本部分导读
+1. 数据互联要解决的根本问题是什么？
+2. 为什么数据互联很重要？
+3. 数据互联的难点在哪里？
+
+这是数据互联的几种方法哦！我们只要知道它们的区别就可以，随着系统愈来愈复杂，这些方法也会被其他更好性能的方法所替代的。
+![数据互联的经典方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95.png)
+
+在这个点上，我的梦想是希望传感器的性能变好，那么根本就不需要数据互联啦！
+
+
+
+# 第五章的主要内容
+## 第一部分：融合估计方法
+## 本部分教程
+![第5章 多传感器融合估计方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch5%20%E7%8A%B6%E6%80%81%E8%9E%8D%E5%90%88%E4%BC%B0%E8%AE%A1.pdf)
+## 本部分PPT
+![第5章 融合估计方法PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/5.1-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf)
+## 本部分导读
+1. 多传感器系统的模型与单传感器有何区别？
+2. 四种融合方法中哪两种性能是一样的？
+3. 每种融合方法有什么优缺点？也就是有什么样的适用系统？能够针对不同的系统选择合适的融合方法、并给出理由。
+4. 设<a href="http://www.codecogs.com/eqnedit.php?latex=\theta" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta" title="\theta" /></a>为待估计变量，已知该变量在实际应用中是一个恒值。使用两个传感器进行测量，测量模型分别为<a href="http://www.codecogs.com/eqnedit.php?latex=y1=0.6*\theta&space;&plus;v1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y1=0.6*\theta&space;&plus;v1" title="y1=0.6*\theta +v1" /></a>，<a href="http://www.codecogs.com/eqnedit.php?latex=y2=2*\theta&space;&plus;v2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2=2*\theta&space;&plus;v2" title="y2=2*\theta +v2" /></a>，测量噪声为高斯白噪声，其测量方差分别为0.3，0.6，求增加传感器前后估计的方差是变大还是变小？为什么？
+5. 如果第二次课的第5和第6题中都增加了一个传感器，测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y2=2*\theta&space;&plus;v2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2=2*\theta&space;&plus;v2" title="y2=2*\theta +v2" /></a>，测量噪声为方差为0.6的高斯白噪声，设计融合估计方法，重新估计待估计量。
+
+6. 设为待估计变量为两个不变量<a href="http://www.codecogs.com/eqnedit.php?latex=\theta1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta1" title="\theta1" /></a>和<a href="http://www.codecogs.com/eqnedit.php?latex=\theta2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta2" title="\theta2" /></a>，已知传感器的测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y=\theta1&plus;\theta2&plus;v" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y=\theta1&plus;\theta2&plus;v" title="y=\theta1+\theta2+v" /></a>，测量噪声<a href="http://www.codecogs.com/eqnedit.php?latex=v" target="_blank"><img src="http://latex.codecogs.com/gif.latex?v" title="v" /></a>的方差为0.4的高斯白噪声。假设又增加了一个传感器，其测量方程为<a href="http://www.codecogs.com/eqnedit.php?latex=y2=\theta2&plus;v2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2=\theta2&plus;v2" title="y2=\theta2+v2" /></a>，测量噪声的方差为0.3。请设计Kalman滤波器，得到估计<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{\theta}1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{\theta}1" title="\hat{\theta}1" /></a>和<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{{\theta}}2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{{\theta}}2" title="\hat{{\theta}}2" /></a>。
+7. 某系统的过程模型为<a href="http://www.codecogs.com/eqnedit.php?latex=x(k&plus;1)=0.3x(k)&plus;w(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x(k&plus;1)=0.3x(k)&plus;w(k)" title="x(k+1)=0.3x(k)+w(k)" /></a>，过程噪声的方差为2，测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y(k)=3x(k)&plus;v(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y(k)=3x(k)&plus;v(k)" title="y(k)=3x(k)+v(k)" /></a>，其中测量噪声<a href="http://www.codecogs.com/eqnedit.php?latex=v" target="_blank"><img src="http://latex.codecogs.com/gif.latex?v" title="v" /></a>的方差为0.4的高斯白噪声。假设又增加了一个传感器，其测量方程为<a href="http://www.codecogs.com/eqnedit.php?latex=y2(k)=3x(k)&plus;v2(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2(k)=3x(k)&plus;v2(k)" title="y2(k)=3x(k)+v2(k)" /></a>，测量噪声的方差为0.3。请设计Kalman滤波器，得到估计<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{x}(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{x}(k)" title="\hat{x}(k)" /></a>。
+
+![多传感器系统模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MultisensorSystem.png)
+
+我们讲述四种不同的状态融合估计方法。
+![四种融合方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/FourFusionMethods.png)
+关于这四种融合方法的简要描述见![文档](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/9-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf)，详细的扩展阅读参见![文档](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/9-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95-%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB.pdf)。
 # 第二部分：估计方法应用——跟踪
 ## 本部分教程：过程模型
 ![第3章 系统模型初探PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/6.1-%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%8F%8A%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95%E5%88%9D%E6%8E%A2.pdf)
@@ -281,45 +321,6 @@ GPS系统的机动目标轨迹的模拟数据
 GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 
 你可以下载![GPS仿真数据](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/C6_5.m)这个程序，利用你的鼠标“点”出你的运行轨迹吧！
-
-
-# 第四章的主要内容
-## 本部分教程
-![第四章 数据互联](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch4%20%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94.pdf)
-## 本部分PPT
-![第4章 数据互联PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/2.2-%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94.pdf)
-## 本部分导读
-1. 数据互联要解决的根本问题是什么？
-2. 为什么数据互联很重要？
-3. 数据互联的难点在哪里？
-
-这是数据互联的几种方法哦！我们只要知道它们的区别就可以，随着系统愈来愈复杂，这些方法也会被其他更好性能的方法所替代的。
-![数据互联的经典方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/%E6%95%B0%E6%8D%AE%E4%BA%92%E8%81%94%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95.png)
-
-在这个点上，我的梦想是希望传感器的性能变好，那么根本就不需要数据互联啦！
-
-
-
-# 第五章的主要内容
-## 本部分教程
-![第5章 多传感器融合估计方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch5%20%E7%8A%B6%E6%80%81%E8%9E%8D%E5%90%88%E4%BC%B0%E8%AE%A1.pdf)
-## 本部分PPT
-![第5章 融合估计方法PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/5.1-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf)
-## 本部分导读
-1. 多传感器系统的模型与单传感器有何区别？
-2. 四种融合方法中哪两种性能是一样的？
-3. 每种融合方法有什么优缺点？也就是有什么样的适用系统？能够针对不同的系统选择合适的融合方法、并给出理由。
-4. 设<a href="http://www.codecogs.com/eqnedit.php?latex=\theta" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta" title="\theta" /></a>为待估计变量，已知该变量在实际应用中是一个恒值。使用两个传感器进行测量，测量模型分别为<a href="http://www.codecogs.com/eqnedit.php?latex=y1=0.6*\theta&space;&plus;v1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y1=0.6*\theta&space;&plus;v1" title="y1=0.6*\theta +v1" /></a>，<a href="http://www.codecogs.com/eqnedit.php?latex=y2=2*\theta&space;&plus;v2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2=2*\theta&space;&plus;v2" title="y2=2*\theta +v2" /></a>，测量噪声为高斯白噪声，其测量方差分别为0.3，0.6，求增加传感器前后估计的方差是变大还是变小？为什么？
-5. 如果第二次课的第5和第6题中都增加了一个传感器，测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y2=2*\theta&space;&plus;v2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2=2*\theta&space;&plus;v2" title="y2=2*\theta +v2" /></a>，测量噪声为方差为0.6的高斯白噪声，设计融合估计方法，重新估计待估计量。
-
-6. 设为待估计变量为两个不变量<a href="http://www.codecogs.com/eqnedit.php?latex=\theta1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta1" title="\theta1" /></a>和<a href="http://www.codecogs.com/eqnedit.php?latex=\theta2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\theta2" title="\theta2" /></a>，已知传感器的测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y=\theta1&plus;\theta2&plus;v" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y=\theta1&plus;\theta2&plus;v" title="y=\theta1+\theta2+v" /></a>，测量噪声<a href="http://www.codecogs.com/eqnedit.php?latex=v" target="_blank"><img src="http://latex.codecogs.com/gif.latex?v" title="v" /></a>的方差为0.4的高斯白噪声。假设又增加了一个传感器，其测量方程为<a href="http://www.codecogs.com/eqnedit.php?latex=y2=\theta2&plus;v2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2=\theta2&plus;v2" title="y2=\theta2+v2" /></a>，测量噪声的方差为0.3。请设计Kalman滤波器，得到估计<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{\theta}1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{\theta}1" title="\hat{\theta}1" /></a>和<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{{\theta}}2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{{\theta}}2" title="\hat{{\theta}}2" /></a>。
-7. 某系统的过程模型为<a href="http://www.codecogs.com/eqnedit.php?latex=x(k&plus;1)=0.3x(k)&plus;w(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x(k&plus;1)=0.3x(k)&plus;w(k)" title="x(k+1)=0.3x(k)+w(k)" /></a>，过程噪声的方差为2，测量模型为<a href="http://www.codecogs.com/eqnedit.php?latex=y(k)=3x(k)&plus;v(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y(k)=3x(k)&plus;v(k)" title="y(k)=3x(k)+v(k)" /></a>，其中测量噪声<a href="http://www.codecogs.com/eqnedit.php?latex=v" target="_blank"><img src="http://latex.codecogs.com/gif.latex?v" title="v" /></a>的方差为0.4的高斯白噪声。假设又增加了一个传感器，其测量方程为<a href="http://www.codecogs.com/eqnedit.php?latex=y2(k)=3x(k)&plus;v2(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y2(k)=3x(k)&plus;v2(k)" title="y2(k)=3x(k)+v2(k)" /></a>，测量噪声的方差为0.3。请设计Kalman滤波器，得到估计<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{x}(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{x}(k)" title="\hat{x}(k)" /></a>。
-
-![多传感器系统模型](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MultisensorSystem.png)
-
-我们讲述四种不同的状态融合估计方法。
-![四种融合方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/FourFusionMethods.png)
-关于这四种融合方法的简要描述见![文档](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/9-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf)，详细的扩展阅读参见![文档](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/9-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95-%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB.pdf)。
 
 ### 作业1
 需要在前两个问题的基础上，完成以下作业的第3题。
