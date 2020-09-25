@@ -112,7 +112,6 @@
 
 
 # 第三章的主要内容
-# 估计方法基础
 ## 本部分教程
 ![第3章 状态估计基础](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch3%20%E7%8A%B6%E6%80%81%E4%BC%B0%E8%AE%A1%E5%9F%BA%E7%A1%80.pdf)
 ## 本部分PPT
@@ -229,10 +228,67 @@ Kalman滤波器5个公式的关系
 我们讲述四种不同的状态融合估计方法。
 ![四种融合方法](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/FourFusionMethods.png)
 关于这四种融合方法的简要描述见![文档](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/9-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95.pdf)，详细的扩展阅读参见![文档](https://github.com/Xue-boJin/data-fusion-for-indoor-tracking-by-RFID/blob/Lesson1/9-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95-%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB.pdf)。
+
+### 作业1
+需要在前两个问题的基础上，完成以下作业的第3题。
+
+假设有一个量满足如下游走模型
+
+<a href="http://www.codecogs.com/eqnedit.php?latex=x(k+1)=0.7x(k)&plus;w(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x(k+1)=0.7x(k)&plus;w(k)" title="x(k+1)=0.7x(k)+w(k)" /></a>
+
+
+<a href="http://www.codecogs.com/eqnedit.php?w(k)\tilde{\&space;}(0,1)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?w(k)\tilde{\&space;}(0,1)" title="w(k)\tilde{\ }(0,1)" /></a>
+
+1.	我们使用了一个传感器对其进行测量，测量模型为
+
+<a href="http://www.codecogs.com/eqnedit.php?latex=\textcenter{{{z}_{1}}(k)=x(k)&plus;{{v}_{1}}(k)}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?{{z}_{1}}(k)=x(k)&plus;{{v}_{1}}(k)" title="{{z}_{1}}(k)=x(k)+{{v}_{1}}(k)" /></a>
+
+<a href="http://www.codecogs.com/eqnedit.php?latex={{v}_{1}}(k)\tilde{\&space;}(0,1)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?{{v}_{1}}(k)\tilde{\&space;}(0,1)" title="{{v}_{1}}(k)\tilde{\ }(0,1)" /></a>
+
+编写程序，模拟传感器获得的测量数据。
+
+2.	编写MATLAB程序，利用Kalman滤波器估计状态量<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{x}(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{x}(k)" title="\hat{x}(k)" /></a>。
+
+3.	假设我们在某一地点又安置了一个传感器，传感器的测量模型为
+
+<a href="http://www.codecogs.com/eqnedit.php?latex={{z}_{2}}(k)=3x(k)&plus;{{v}_{2}}(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?{{z}_{2}}(k)=3x(k)&plus;{{v}_{2}}(k)" title="{{z}_{2}}(k)=3x(k)+{{v}_{2}}(k)" /></a>
+
+<a href="http://www.codecogs.com/eqnedit.php?latex={{v}_{2}}(k)\tilde{\&space;}(0,3)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?{{v}_{2}}(k)\tilde{\&space;}(0,3)" title="{{v}_{2}}(k)\tilde{\ }(0,3)" /></a>
+
+设计融合方法，使用两个传感器的数据得到状态估计，分析其估计性能与前面单传感器的差别。
+
+上交文档要求：
+
+利用MATLAB程序实现这四种算法，给出结果图和程序，并进行适当的说明。
+
+第一种：测量融合方法I
+
+第二种：测量融合方法II
+
+第三种：track to track 融合方法
+
+第四种：分布式最优算法
+
+注：计入大作业成绩，请同学们认真对待。
+
+### 参考答案
+
+用于产生模拟数据的程序见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/mydata.m)， 获得了![数据](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/myfusiondata.mat)。
+
+第一种：测量融合方法I的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MIfunction.m)。
+
+第二种：测量融合方法II的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MIIfunction.m)。
+
+第三种：track to track 融合方法的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/TTfunction.m)。
+
+第四种：分布式最优算法的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/DistributedFusionfunction.m)。
+利用MATLAB程序实现这四种算法并进行比较，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/showall.m)。
+
+
 # 第二部分：估计方法应用——跟踪
 ## 本部分教程：过程模型
-![第3章 系统模型初探PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/6.1-%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%8F%8A%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95%E5%88%9D%E6%8E%A2.pdf)
-![第3章 过程模型PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/6.2-%E6%9C%BA%E5%8A%A8%E7%9B%AE%E6%A0%87%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B.pdf)
+![第5章 系统模型初探PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/6.1-%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%8F%8A%E8%9E%8D%E5%90%88%E6%96%B9%E6%B3%95%E5%88%9D%E6%8E%A2.pdf)
+![第5章 过程模型PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/6.2-%E6%9C%BA%E5%8A%A8%E7%9B%AE%E6%A0%87%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B.pdf)
 ## 本部分导读
 1. 每一个模型都适用于具有什么特征的运动？要求能够根据不同的运动特性进行合理选择。
 2. 每一个模型都需要设置哪些初始量？
@@ -321,61 +377,6 @@ GPS系统的机动目标轨迹的模拟数据
 GPS系统的机动目标轨迹横、纵坐标轴的模拟数据
 
 你可以下载![GPS仿真数据](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/C6_5.m)这个程序，利用你的鼠标“点”出你的运行轨迹吧！
-
-### 作业1
-需要在前两个问题的基础上，完成以下作业的第3题。
-
-假设有一个量满足如下游走模型
-
-<a href="http://www.codecogs.com/eqnedit.php?latex=x(k+1)=0.7x(k)&plus;w(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x(k+1)=0.7x(k)&plus;w(k)" title="x(k+1)=0.7x(k)+w(k)" /></a>
-
-
-<a href="http://www.codecogs.com/eqnedit.php?w(k)\tilde{\&space;}(0,1)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?w(k)\tilde{\&space;}(0,1)" title="w(k)\tilde{\ }(0,1)" /></a>
-
-1.	我们使用了一个传感器对其进行测量，测量模型为
-
-<a href="http://www.codecogs.com/eqnedit.php?latex=\textcenter{{{z}_{1}}(k)=x(k)&plus;{{v}_{1}}(k)}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?{{z}_{1}}(k)=x(k)&plus;{{v}_{1}}(k)" title="{{z}_{1}}(k)=x(k)+{{v}_{1}}(k)" /></a>
-
-<a href="http://www.codecogs.com/eqnedit.php?latex={{v}_{1}}(k)\tilde{\&space;}(0,1)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?{{v}_{1}}(k)\tilde{\&space;}(0,1)" title="{{v}_{1}}(k)\tilde{\ }(0,1)" /></a>
-
-编写程序，模拟传感器获得的测量数据。
-
-2.	编写MATLAB程序，利用Kalman滤波器估计状态量<a href="http://www.codecogs.com/eqnedit.php?latex=\hat{x}(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\hat{x}(k)" title="\hat{x}(k)" /></a>。
-
-3.	假设我们在某一地点又安置了一个传感器，传感器的测量模型为
-
-<a href="http://www.codecogs.com/eqnedit.php?latex={{z}_{2}}(k)=3x(k)&plus;{{v}_{2}}(k)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?{{z}_{2}}(k)=3x(k)&plus;{{v}_{2}}(k)" title="{{z}_{2}}(k)=3x(k)+{{v}_{2}}(k)" /></a>
-
-<a href="http://www.codecogs.com/eqnedit.php?latex={{v}_{2}}(k)\tilde{\&space;}(0,3)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?{{v}_{2}}(k)\tilde{\&space;}(0,3)" title="{{v}_{2}}(k)\tilde{\ }(0,3)" /></a>
-
-设计融合方法，使用两个传感器的数据得到状态估计，分析其估计性能与前面单传感器的差别。
-
-上交文档要求：
-
-利用MATLAB程序实现这四种算法，给出结果图和程序，并进行适当的说明。
-
-第一种：测量融合方法I
-
-第二种：测量融合方法II
-
-第三种：track to track 融合方法
-
-第四种：分布式最优算法
-
-注：计入大作业成绩，请同学们认真对待。
-
-### 参考答案
-
-用于产生模拟数据的程序见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/mydata.m)， 获得了![数据](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/myfusiondata.mat)。
-
-第一种：测量融合方法I的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MIfunction.m)。
-
-第二种：测量融合方法II的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/MIIfunction.m)。
-
-第三种：track to track 融合方法的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/TTfunction.m)。
-
-第四种：分布式最优算法的函数，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/DistributedFusionfunction.m)。
-利用MATLAB程序实现这四种算法并进行比较，见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/showall.m)。
 
 
 ## 作业2
