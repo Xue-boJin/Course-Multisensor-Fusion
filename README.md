@@ -101,9 +101,9 @@
 2. 在电脑matlab上需要安装MATLAB Support Package for Apple iOS Sensors或MATLAB Support Package for Android Sensors，
 3. 按照提示获取手机数据并分析，参见如下网页
 
-![安卓系统的参考网页](https://ww2.mathworks.cn/help/matlabmobile_android/index.html)
+安卓系统的参考网页: https://ww2.mathworks.cn/help/matlabmobile_android/index.html
 
-![苹果系统的参考网页](https://ww2.mathworks.cn/help/matlabmobile/index.html)
+苹果系统的参考网页: https://ww2.mathworks.cn/help/matlabmobile/index.html
 
 
 ### 练习1
