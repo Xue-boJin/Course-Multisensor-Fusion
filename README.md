@@ -1,4 +1,4 @@
-## 欢迎来到北京工商大学“多源传感器数据融合”研究生课程
+## 欢迎来到北京工商大学“多传感器数据融合”研究生课程
 
 课程网站 [Multisensor fusion on GitHub](https://github.com/Xue-boJin/Course-Multisensor-Fusion.git) 包含了这门课程的所有信息。
 
