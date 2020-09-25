@@ -69,6 +69,24 @@
 
 对于测量噪声来讲，因为这是一个统计随机过程的统计量，所以说我们不能够把它去掉，但是我们需要知道这个噪声的统计特性，比如说它是否是高斯白噪声以及它的方差等等，利用这些信息在融合过程当中来考虑这些测量数据的不准确性，以获得更准确的融合结果。
 
+既然传感器有点不靠谱，那么，我们使用多个传感器同时测量吧，尽量把不靠谱的数据给“挤兑”出去吧！！
+试试看下面这个程序，看看有啥结果吧！！
+
+measurements=[848.1,850.5,851.9,849.9,854.6,849.3,848.0,848.3]';
+covv=[25.73,23.81,24.95,25.75,35.65,21.33,23.94,22.96]';
+RealValue=850.5;
+RealCov=4.5025;
+for i=1:8
+    for j=1:8
+         d(i,j)=erf((measurements(j)-measurements(i))/(sqrt(2)*covv(i)))
+    end
+End
+Threshold=0.4;
+R=(abs(d)-Threshold*ones(8))<0
+SupportNumber=5;
+support=(sum(R,2)>SupportNumber)
+FusionData=(support'*(measurements./covv)+RealValue/RealCov)/(support'*(1./covv)+1/RealCov)
+
 ### 作业一：使用手机采集并分析运动数据
 #### 目的
 观察手机传感器的测量特性
