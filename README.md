@@ -257,9 +257,9 @@ Kalman滤波器5个公式的关系
 
 设计融合方法，使用两个传感器的数据得到状态估计，分析其估计性能与前面单传感器的差别。
 
-上交文档要求：
+要求：
 
-利用MATLAB程序实现这四种算法，给出结果图和程序，并进行适当的说明。
+利用MATLAB程序实现以下五种算法：
 
 第一种：测量融合方法I
 
@@ -269,9 +269,15 @@ Kalman滤波器5个公式的关系
 
 第四种：分布式最优算法
 
+第五种：协方差交互（CI）融合方法
+
+上交压缩文档须包括：
+1）论文，包括对各种融合方法的介绍，仿真数据的说明，仿真结果的图及性能比较表格等；
+2）MATLAB程序。
+
 注：计入大作业成绩，请同学们认真对待。
 
-### 参考答案
+### 部分参考程序
 
 用于产生模拟数据的程序见![参考程序](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/mydata.m)， 获得了![数据](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/code/myfusiondata.mat)。
 
