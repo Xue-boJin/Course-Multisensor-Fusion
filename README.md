@@ -6,7 +6,7 @@
 ## 本部分教程
 ![第1章 信息融合的概念](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch1%20%E5%BA%8F%E8%A8%80.pdf)
 ## 本部分PPT
-![第1章 PPT](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.3-%E4%BC%A0%E6%84%9F%E5%99%A8%E6%B5%8B%E9%87%8F%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E7%82%B9.pdf)
+![第1章 PPT](https://https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/ppt/1.2-%E5%A4%9A%E4%BC%A0%E6%84%9F%E5%99%A8%E4%BF%A1%E6%81%AF%E8%9E%8D%E5%90%88%E6%8A%80%E6%9C%AF%EF%BC%8D%E6%B8%85%E6%99%B0%E7%89%88.pdf)
 ## 本部分导读
 1. 信息融合的基本特点是什么？
 2. 信息融合的方式有哪两类？请画图说明信息的流动关系？
