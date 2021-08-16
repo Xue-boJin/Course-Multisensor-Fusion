@@ -32,11 +32,7 @@
 ## 大信息融合的概念与信息融合技术的关系
 ![两者的关系](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/res/ApplicationofFusion.png)
 感觉到这两者不一样了吧！！希望课程能让你既可以应用信息融合的概念处理生活、学习中的事情，让自己更有智慧，又可以学会信息融合技术做一个IT精英！
-<> ## 本门课程的主要内容
-% 以数据融合中的位置估计为主要内容，讲授基于RFID的室内跟踪仿真系统。
 
-% 我们一起搭建一个基于MATLAB的仿真系统，界面就像这样的：
-% ![RFID仿真系统界面](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/master/RFIDTrackingSystem.png)
 # 第二章的内容
 ## 本部分教程
 ![第2章 数据源](https://github.com/Xue-boJin/Course-Multisensor-Fusion/blob/reference/ch2%20%E6%95%B0%E6%8D%AE%E6%BA%90.pdf)
@@ -88,22 +84,7 @@
     support=(sum(R,2)>SupportNumber)
     FusionData=(support'*(measurements./covv)+RealValue/RealCov)/(support'*(1./covv)+1/RealCov)
 
-%### 作业一：使用手机采集并分析运动数据
-%#### 目的
-%观察手机传感器的测量特性
-%#### 内容
-%1. 采集手机的IMU、GPS数据，观察手机在运动及静止时的数据的不同
-%2. 设计计步算法，分析方法的准确及可靠性
-%3. 撰写论文，说明所设计系统的方法、优势等
-%4. 开发基于安卓/ios系统的手机APP
-%#### 提示：获取数据方法
-%1. 在手机上下载matlab的APP
-%2. 在电脑matlab上需要安装MATLAB Support Package for Apple iOS Sensors或MATLAB Support Package for Android Sensors，
-%3. 按照提示获取手机数据并分析，参见如下网页
 
-%安卓系统的参考网页: https://ww2.mathworks.cn/help/matlabmobile_android/index.html
-
-%苹果系统的参考网页: https://ww2.mathworks.cn/help/matlabmobile/index.html
 
 
 ### 练习1
